@@ -6,52 +6,54 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-  <header role="banner" id="top">
-  <strong>The Pangolin</strong>
-  <ul class="skip-links">
-    <li><a href="#main">Jump to main content</a></li>
-    <li><a href="#nav">Jump to navigation</a></li>
-  </ul>
-  </header>
-
-  <main role="Pangolin"id=<"main">
-    <ul>
-      <li>Description</li>
-      <li>Behaviour</li>
-      <li>Conservation</li>
-    </ul>
-  </main>
-
-    <main role="main">
-      <h2>Description</h2>
-      <p>Some countries where pangolins are found</p>
+  <section>
+    <header role="banner" id="top">
+      <h1 aria-label="The Pangolin">The Pangolin</h1>
       <nav role="navigation">
-        <ul>
-          <li>Botswana</li>
-          <li>Kenya</li>
-          <li>Mozambique</li>
-          <li>Namibia</li>
-          <li>South Africa</li>
-          <li>Tanzania</li>
-          <li>Uganda</li>
-          <li>Zambia</li>
-          <li>Zimbabwe</li>
+        <ul class="skip-links">
+          <li><a href="#main" aria-label="Jump to main content">Jump to main content</a></li>
+          <li><a href="#nav" aria-label="Jump to navigation">Jump to navigation</a></li>
         </ul>
-        </main>
+      </nav>
+    </header>
+  </section>
+  <main role="main" id="main" tabindex="0">
+    <section>
+      <h2 aria-label="Pangolin">Pangolin</h2>
+      <img aria-details="An-illustration-of-a-pangolin-trying-to-sleep" src="./images/pangolin.jpg" alt="An illustration of a pangolin trying to sleep">
+      <ul>
+        <li>Description</li>
+        <li>Behaviour</li>
+        <li>Conservation</li>
+      </ul>
+      <h2 aria-label="Description">Description</h2>
+      <p>Some countries where pangolins are found</p>
+      <ul>
+        <li>Botswana</li>
+        <li>Kenya</li>
+        <li>Mozambique</li>
+        <li>Namibia</li>
+        <li>South Africa</li>
+        <li>Tanzania</li>
+        <li>Uganda</li>
+        <li>Zambia</li>
+        <li>Zimbabwe</li>
+      </ul>
+    </section>
+  </main>
+  <section>
+    <aside role="complementary" id="nav">
+      <h2 aria-label="Behaviour">Behaviour</h2>
+      <a href="https://en.wikipedia.org/wiki/Pangolin#Behavior" aria-label="Read more about Pangolin behaviour">Read more</a>
 
-      <h2>Behaviour</h2>
-      <nav role="https://en.wikipedia.org/wiki/Pangolin#Behavior"id=<"nav">
-      Read more about Pangolin behaviour
-      Read more
-
-      <h2>Conservation</h2>
-      <nav role="https://en.wikipedia.org/wiki/Pangolin#Conservation"id=<"nav">
-      Read more about Pangolin conservation
-      Read more
-
-  <footer role="contentinfo">
-    <p>© 1821 Pangolin</p>
-  </footer>
-
+      <h2 aria-label="Conservation">Conservation</h2>
+      <a href="https://en.wikipedia.org/wiki/Pangolin#Conservation" aria-label="Read more about Pangolin conservation">Read more</a>
+    </aside>
+  </section>
+  <section>
+    <footer role="contentinfo">
+      <p>© <time datetime="1821">1821</time> Pangolin</p>
+    </footer>
+  </section>
 </body>
 </html>
